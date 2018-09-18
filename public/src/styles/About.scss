@@ -1,0 +1,51 @@
+.outerAboutWrapper {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .aboutWrapper {
+    display: flex;
+
+    .leftSide {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .profileImg {
+        border-radius: 50%;
+        width: 40%;
+      }
+      a {
+        margin-top: 4em;
+        text-decoration: none;
+        color: black;
+      }
+      a:last-of-type {
+        margin-top: 1em;
+        img {
+          width: 100px;
+        }
+      }
+      .resume {
+        background: lightcyan;
+        margin-top: 1em;
+        width: 20%;
+        padding: 0.5em 2em;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+    .right {
+      flex: 1;
+      text-align: left;
+      .about {
+        padding-right: 20%;
+      }
+    }
+  }
+}
