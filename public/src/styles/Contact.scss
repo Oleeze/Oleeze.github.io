@@ -1,0 +1,56 @@
+.contactWrapper {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  background: gray;
+  .formWrapper {
+    width: 50%;
+    height: 40%;
+    margin: auto;
+    padding: 2em;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    .info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+    }
+    form {
+      flex: 3;
+      padding: 1em;
+      .formTop {
+        display: flex;
+        flex-direction: row;
+        .input {
+          flex: 1;
+          padding: 1em;
+        }
+        .input:first-of-type {
+          margin-right: 1em;
+        }
+        .input:last-of-type {
+          margin-left: 1em;
+        }
+      }
+      .Message {
+        width: 100%;
+        padding: 1em;
+        height: 60%;
+        margin-top: 2em;
+        box-sizing: border-box;
+      }
+      .Send {
+        background: #4169e1;
+        padding: 1em 3em;
+        border: 1px solid black;
+        float: right;
+        margin: 1em 0;
+      }
+    }
+  }
+}
