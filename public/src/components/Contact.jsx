@@ -14,9 +14,15 @@ class Contact extends Component {
           <form
             action="https://formspree.io/orudenkony@gmail.com"
             method="POST"
+            className="form"
           >
             <div className="formTop">
-              <input className="input" type="text" placeholder="Name" />
+              <input
+                className="input"
+                type="text"
+                placeholder="Name"
+                name="name"
+              />
               <input
                 className="input"
                 type="text"
@@ -24,7 +30,11 @@ class Contact extends Component {
                 placeholder="Email"
               />
             </div>
-            <textarea className="Message" placeholder="Message" />
+            <textarea
+              className="Message"
+              placeholder="Message"
+              name="message"
+            />
             <input className="Send" type="submit" value="Send" />
           </form>
         </div>

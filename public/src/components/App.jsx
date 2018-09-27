@@ -11,9 +11,8 @@ class App extends Component {
     return (
       <div>
         <Home />
-        <div className="trans" />
         <About />
-        <SkillSet />
+        {/* <SkillSet /> */}
         <Projects />
         <Contact />
       </div>

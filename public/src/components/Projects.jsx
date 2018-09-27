@@ -5,15 +5,23 @@ class Projects extends Component {
   render() {
     return (
       <div className="projectWrapper">
-        <h1>Projects</h1>
-
         <div className="project">
           <div className="left">Left</div>
-          <div className="right">Right</div>
+          <div className="right">
+            <h1>Airbnb</h1>
+            <p>First</p>
+            <p>Second</p>
+            <p>Last</p>
+          </div>
         </div>
         <div className="project">
-          <div className="right">Right</div>
           <div className="left">Left</div>
+          <div className="right">
+            <h1>ChatterCat</h1>
+            <p>First</p>
+            <p>Second</p>
+            <p>Last</p>
+          </div>
         </div>
       </div>
     );

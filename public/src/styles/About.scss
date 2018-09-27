@@ -1,38 +1,37 @@
 .outerAboutWrapper {
-  height: 100vh;
   width: 100vw;
   max-width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   .aboutWrapper {
     display: flex;
-
+    flex-direction: column;
     .leftSide {
+      height: 100vh;
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       .profileImg {
         border-radius: 50%;
-        width: 40%;
+        width: 70%;
       }
       a {
-        margin-top: 4em;
+        margin-top: 0.5em;
         text-decoration: none;
         color: black;
       }
       a:last-of-type {
-        margin-top: 1em;
         img {
           width: 100px;
         }
       }
       .resume {
         background: lightcyan;
-        margin-top: 1em;
-        width: 20%;
-        padding: 0.5em 2em;
+        margin: 0.5em 0;
+        width: 30%;
+        padding: 0.5em 0;
         border: 1px solid black;
         border-radius: 5px;
         text-transform: uppercase;
@@ -41,10 +40,122 @@
       }
     }
     .right {
-      flex: 1;
-      text-align: left;
+      height: 100vh;
       .about {
-        padding-right: 20%;
+        text-align: justify;
+        padding: 0 5%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 400px) {
+  .outerAboutWrapper {
+    .aboutWrapper {
+      .leftSide {
+        .profileImg {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .outerAboutWrapper {
+    .aboutWrapper {
+      .leftSide {
+        .profileImg {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .outerAboutWrapper {
+    .aboutWrapper {
+      .leftSide {
+        .profileImg {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .outerAboutWrapper {
+    .aboutWrapper {
+      .leftSide {
+        height: 100vh;
+      }
+      .right {
+        height: 40vh;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .outerAboutWrapper {
+    .aboutWrapper {
+      flex-direction: row;
+      height: 100vh;
+      align-items: center;
+      .leftSide {
+        .profileImg {
+          width: 50%;
+        }
+      }
+      .right {
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .outerAboutWrapper {
+    .aboutWrapper {
+      .leftSide {
+        height: 75vh;
+      }
+      .right {
+        height: 75vh;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .outerAboutWrapper {
+    .aboutWrapper {
+      .leftSide {
+        height: 50vh;
+      }
+      .right {
+        height: 50vh;
+        margin-bottom: 1px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 820px) and (min-height: 800px) {
+  .outerAboutWrapper {
+    .aboutWrapper {
+      height: 100vh;
+      .leftSide {
+        height: 100%;
+        .profileImg {
+          width: 50%;
+        }
+      }
+      .right {
+        height: 100%;
+        display: flex;
+        align-items: center;
       }
     }
   }

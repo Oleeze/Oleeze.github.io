@@ -22,17 +22,14 @@ class Home extends Component {
   render() {
     return (
       <div className="homeOuterWrapper">
-        <div className="homeWrapper">
-          {/* <h1>{this.state.first}</h1>
-        <h1>{this.state.last}</h1> */}
-          {/* <div className="homeLeft">Left</div>
-          <div className="homeMiddle" />
-          <div className="homeRight">Right</div> */}
-          <img src={require("../letters/O.png")} />
-          <img src={require("../letters/L.png")} />
-          <img src={require("../letters/E.png")} />
-          <img src={require("../letters/G.png")} />
+        <div className="topRight" />
+        <div className="center">
+          <div className="centerContent">
+            <h1>Oleg Rudenko</h1>
+            <p>FrontEnd Developer</p>
+          </div>
         </div>
+        <div className="bottomLeft" />
       </div>
     );
   }
