@@ -20,18 +20,7 @@ class Home extends Component {
   }
 
   render() {
-    return (
-      <div className="homeOuterWrapper">
-        <div className="topRight" />
-        <div className="center">
-          <div className="centerContent">
-            <h1>Oleg Rudenko</h1>
-            <p>FrontEnd Developer</p>
-          </div>
-        </div>
-        <div className="bottomLeft" />
-      </div>
-    );
+    return <div className="homeOuterWrapper" />;
   }
 }
 
