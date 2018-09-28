@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="tabcontent.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="dot-nav">
+        <ul>
+            <li class="dot-container">
+                <a href="#" data-number="0" class>
+                    <span class="dot"></span>
+                    <span class="dot-label">Intro</span>
+                </a>
+            </li>
+            <li class="dot-container">
+                <a href="#" data-number="1" class>
+                    <span class="dot"></span>
+                    <span class="dot-label">About</span>
+                </a>       
+            </li>
+            <li class="dot-container">
+                <a href="#" data-number="2" class>
+                    <span class="dot"></span>
+                    <span class="dot-label">Projects</span>
+                </a>       
+            </li>
+            <li class="dot-container">
+                <a href="#" data-number="3" class>
+                    <span class="dot"></span>
+                    <span class="dot-label">Contact</span>
+                </a>     
+            </li>
+            <li class="dot-container">
+                <a href="#" data-number="4" class>
+                    <span class="dot"></span>
+                    <span class="dot-label">Intro</span>
+                </a>    
+            </li>
+        </ul>
+    </nav>
+    <div class="toggleBtn">
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
+    </div>
+    <div id="overlay" class="overlay">
+        <div class="logo">
+            <span>Oleg Rudenko</span>
+        </div>
+        <nav class="overlay-menu">
+            <ul class="menu-container">
+                <li class="menu-item">
+                    <a href="#intro-section">Intro</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#section-about">about</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#project-section">Project</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contact-section">Contact</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contact-section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+<section id="section-home" class="section">
+<div class="section-wrapper">
+    <div class="home-body">
+     <div class="home-content">
+           <img src="Logo.png">
+            <h1 class="heading">
+                <span class="name">
+                Oleg Rudenko</span>
+            </h1>
+        <div class="home-subject">
+            <p class="subtext">
+                <span class="subject">Front End Software Developer</span>
+            </p>
+        </div>
+        </div>
+    </div>
+</div>
+</section>      
+
+
+    
+    
+    
+    
+    
+    
+<section id="section-about" class="section">
+<div class="section-wrapper">
+    <div class="about-title">
+        <h1>About</h1>
+    </div>
+    <div id="about-left" class="side">
+    <h1  style="margin-top: 0px;">About Me</h1>
+        <p style="padding-top: 20px;">Hi my name's Oleg Rudenko, I'm a student studying to become a software developer!</p>
+        <p>Currently finishing my last semester at Essex County</p>
+        <p>College and transferring to Rutgers New Brunswick in pursuit of a higher education.</p>
+        <p>I strive to discover new ways to develop and improvemy skills on a daily basis!</p>
+        <p>After working 4+ years as a server and brand ambassador
+            I understand the challenges of working in a professional environment and "Getting It Done".</p>   
+    </div>
+
+    
+    <div id="about-right" class="side">              
+                <h1  style="margin-top: 0px;">Skills</h1>
+                <ul class="tabs" data-persist="true">
+                    <li class="selected"><a href="#view1">Front-End</a></li>
+                    <li class=""><a href="#view2">DevOps</a></li>
+                    <li class=""><a href="#view3">Database</a></li>
+                </ul>
+                <div class="tabcontents"> 
+                    <div id="view1">
+                          <div class="circle">  
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>Html5</p>
+                            </div>
+                              
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png" >
+                                <p>Css3</p>
+                            </div>
+                              
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>Jquery</p>
+                            </div>
+                              
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>AJAX/JSON</p>
+                            </div>
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>AngularJS</p>
+                            </div>
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>Node.JS</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="view2" style="display:none;">
+                        
+                        <div class="circle">  
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>Git Bash</p>
+                            </div>
+                              
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png" >
+                                <p>Jmeter</p>
+                            </div>
+                              
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>Jenkins</p>
+                            </div>
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>Selenium</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="view3" style="display:none;">
+                        
+                        <div class="circle">  
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>Access</p>
+                            </div>
+                              
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png" >
+                                <p>Excel</p>
+                            </div>
+                              
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>XML</p>
+                            </div>
+                              
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>CSV</p>
+                            </div>
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>XAMP/WAMP</p>
+                            </div>
+                            <div id="circle">
+                                <img src="outcircle.png" class="zoom">
+                                <img src="incircle.png">
+                                <p>Php/mySql</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button class="button hvr-underline-from-left" onclick="window.open('http://orudenko.com/resume.pdf')">resume</button>
+    </div>
+</div>
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<section id="section-exprience" class="section">
+<div class="section-wrapper">
+    <div class="featured work">
+    <h2>Portfolio</h2>
+    <ul class="three-up no-gutter">
+        <li>
+            <a href="" style="background-color: #291444"></a>
+            <h3>AngularJS,HTML5,CSS3, Responsive</h3>
+        </li>
+        <li>
+            <a href="" style="background-color: #000"></a>
+            <h3>HTML5,CSS3, Responsive,jQuery</h3>
+        </li>
+        <li>
+            <a href="" style="background-color: #33363B"></a>
+            <h3>AngularJS,HTML5,CSS3, Responsive</h3>
+        </li>
+                <li>
+            <a href="" style="background-color: #291444"></a>
+            <h3>AngularJS,HTML5,CSS3, Responsive</h3>
+        </li>
+        <li>
+            <a href="" style="background-color: #000"></a>
+            <h3>HTML5,CSS3, Responsive,jQuery</h3>
+        </li>
+        <li>
+            <a href="" style="background-color: #33363B"></a>
+            <h3>AngularJS,HTML5,CSS3, Responsive</h3>
+        </li>
+    </ul>
+    </div>
+</div>
+</section>       
+<section id="section-contact" class="section">
+<div class="section-wrapper">
+    <div class="left-contact">
+        <div class="top-contact">
+        <h1>Contact</h1>
+		<p> In need of an intern? Contact me: </p>
+		<div class="desc">
+			<p style="line-height:1.5em;"><span><a href="#">orudenkony@gmail.com</a></span></p>
+			<p style="line-height:1.5em;"><span>Tel: 973.580.3059 </span></p>
+			<p style="line-height:1.5em;"><span>  </span></p>
+			<p style="line-height:1.5em;"><span>  </span></p>
+			<p style="line-height:1.5em;"><span>I am located in NewJersey, lets meet up and chat  </span></p>
+		</div>
+    </div>
+    </div>
+    <div class="right-contact">
+                <form action="https://formspree.io/orudenkony@gmail.com" method="post">
+                <div class="contact-info-group">
+                            <input type="text" name="name" placeholder="Your name">
+                            <input type="text" name="_replyto" placeholder="Your email">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                </div>
+                <div class="submit-wrap">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+            </div>
+    
+
+</div>
+</section>     
+    <script type="text/javascript">
+            $('.menu-toggle').click(function(){
+            $('.site-nav').toggleClass('site-nav--open');
+        $(this).toggleClass('open',500);
+        })
+        
+        var popupLeftDiv = document.getElementById("popup_left_bg");  
+        function openLeftPopupMenu(){
+            popupLeftDiv.style.display="block";
+             popupLeftDiv.style.zIndex="10";
+        }
+        function closeLeftPopupMenu(){
+            popupLeftDiv.style.display = "none";
+        }
+         var popupMidDiv = document.getElementById("popup_mid_bg");  
+        function openMidPopupMenu(){
+            popupMidDiv.style.display="block";
+             popupMidDiv.style.zIndex="10";
+        }
+        function closeMidPopupMenu(){
+            popupMidDiv.style.display = "none";
+        }
+         var popupRightDiv = document.getElementById("popup_right_bg");  
+        function openRightPopupMenu(){
+            popupRightDiv.style.display="block";
+             popupRightDiv.style.zIndex="10";
+        }
+        function closeRightPopupMenu(){
+            popupRightDiv.style.display = "none";
+        }
+    </script>
+    <script>
+        $("document").ready(function(){
+            $(".heading").fadeIn(2000);
+            $(".subtext").fadeIn(8500);
+            $(".toggleBtn").click(function(){
+                $(this).toggleClass("active");
+             $(".overlay").toggleClass("open");
+             $("body").toggleClass("noscroll");
+            });
+            $(".menu-item").click(function(){
+               $(".overlay").toggleClass("open");
+               $("body").toggleClass("noscroll");
+            });
+        });    
+    </script>
+</body>
+</html>
