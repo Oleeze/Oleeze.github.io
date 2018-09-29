@@ -4,8 +4,8 @@
   "description": "",
   "main": "./server/index.js",
   "scripts": {
-    "heroku-postbuild": "webpack -p",
     "dev": "node ./server/index.js",
+    "heroku-postbuild": "webpack -p",
     "build": "webpack --watch --mode production"
   },
   "keywords": [],
