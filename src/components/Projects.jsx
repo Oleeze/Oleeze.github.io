@@ -8,7 +8,7 @@ class Projects extends Component {
         <h1>Projects</h1>
         <div className="project">
           <a href="https://whispering-badlands-74800.herokuapp.com">
-            <img src={require("./chat.png")} />
+            <img src={require("../images/chat.png")} />
             <div className="projectDesc">
               <div className="projectDescTop">
                 <h3>Real time Chat Room</h3>

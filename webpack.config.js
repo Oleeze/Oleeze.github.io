@@ -2,9 +2,9 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-  entry: path.join(__dirname, "/public/src/index.js"),
+  entry: path.join(__dirname, "/src/index.js"),
   output: {
-    path: path.join(__dirname, "/public/dist"),
+    path: path.join(__dirname, "/docs"),
     filename: "babel.js"
   },
   module: {
@@ -16,9 +16,10 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-            "style-loader", // creates style nodes from JS strings
-            "css-loader", // translates CSS into CommonJS
-            "sass-loader" // compiles Sass to CSS, using Node Sass by default
+            // fallback to style-loader in development
+            process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+            "css-loader",
+            "sass-loader"
         ]
       },
       {
@@ -42,7 +43,7 @@ module.exports = {
       // ./public directory is being served
       host: 'localhost',
       port: 3000,
-      server: { baseDir: ['public/dist'] }
+      server: { baseDir: ['docs'] }
     })
   ]
 }

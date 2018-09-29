@@ -7,16 +7,16 @@ class About extends Component {
       <div className="outerAboutWrapper">
         <div className="aboutWrapper">
           <div className="leftSide">
-            <img className="profileImg" src={require("./me.png")} />
+            <img className="profileImg" src={require("../images/me.png")} />
             <ul>
               <li>
                 <a href="https://www.linkedin.com/in/ogrudenko/">
-                  <img src={require("./LinkedIn.png")} />
+                  <img src={require("../images/LinkedIn.png")} />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/Oleeze">
-                  <img src={require("./GitHub.png")} />
+                  <img src={require("../images/GitHub.png")} />
                 </a>
               </li>
               <li>

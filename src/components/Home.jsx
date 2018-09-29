@@ -76,7 +76,7 @@ class Home extends Component {
       <div className="homeOuterWrapper">
         <canvas ref="canvas" handleResize={this.updateCanvas} />
         <div className="Logo">
-          <img src={require("./Logo.png")} />
+          <img src={require("../images/Logo.png")} />
           <div className="Me">
             <h1>Front End Web Developer</h1>
             <h2>Oleg Rudenko</h2>
