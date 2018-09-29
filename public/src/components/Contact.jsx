@@ -6,7 +6,7 @@ class Contact extends Component {
       <div className="contactWrapper">
         <div className="formWrapper">
           <div className="info">
-            <a href="#">orudenkony@gmail.com</a>
+            <a>orudenkony@gmail.com</a>
             <a>Tel: 973.580.3059 </a>
             <a>I am located in Los Angeles,</a>
             <a> lets meet up and chat </a>
@@ -17,19 +17,26 @@ class Contact extends Component {
             className="form"
           >
             <div className="formTop">
-              <input
-                className="input"
-                type="text"
-                placeholder="Name"
-                name="name"
-              />
-              <input
-                className="input"
-                type="text"
-                name="_replyto"
-                placeholder="Email"
-              />
+              <div className="inputWrapper">
+                <p>Name</p>
+                <input
+                  className="input"
+                  type="text"
+                  placeholder="Your Name"
+                  name="name"
+                />
+              </div>
+              <div className="inputWrapper">
+                <p>Email</p>
+                <input
+                  className="input"
+                  type="text"
+                  name="_replyto"
+                  placeholder="Your Email"
+                />
+              </div>
             </div>
+            <p>Message</p>
             <textarea
               className="Message"
               placeholder="Message"

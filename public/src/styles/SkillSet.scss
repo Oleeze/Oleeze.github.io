@@ -1,5 +1,6 @@
 .skillWrapper {
   text-align: center;
+  font-family: Lato;
   h1 {
     margin: 2em 0;
     text-decoration: underline;
@@ -7,10 +8,10 @@
   .topSkills {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     .skill {
       width: 45%;
-      margin: 0.2em;
+      margin: 0.2em 0;
     }
   }
 }
@@ -29,16 +30,7 @@
 @media screen and (min-width: 800px) {
   .skillWrapper {
     .topSkills {
-      .skill {
-        width: 20%;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .skillWrapper {
-    .topSkills {
+      margin: 0 15%;
       .skill {
         width: 15%;
       }
@@ -63,13 +55,13 @@
 //       position: relative;
 //       max-height: 100%;
 //       padding: 1em 3em;
-//       background: linear-gradient(
-//         170deg,
-//         #152126 0,
-//         #152126 45%,
-//         #152126 29%,
-//         #3f5967 100%
-//       );
+// background: linear-gradient(
+//   170deg,
+//   #152126 0,
+//   #152126 45%,
+//   #152126 29%,
+//   #3f5967 100%
+// );
 //       color: white;
 //       transition: all 0.1s ease-in-out;
 //     }

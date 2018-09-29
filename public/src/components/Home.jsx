@@ -11,7 +11,9 @@ class Home extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.updateCanvas();
+    window.addEventListener("resize", this.updateCanvas.bind(this));
   }
 
   updateCanvas() {
@@ -33,7 +35,9 @@ class Home extends Component {
       c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
       c.fillStyle = this.color;
       c.shadowColor = "#E3EAEF";
-      c.shadowBlur = 20;
+      c.shadowBlur = Math.random() * 25 + 10;
+      c.shadowOffsetX = 0;
+      c.shadowOffsetY = 0;
       c.fill();
       c.closePath();
     };
@@ -43,15 +47,13 @@ class Home extends Component {
     };
 
     let stars;
-    let backgroundStars;
     function init() {
       stars = [];
-      backgroundStars = [];
       for (let i = 0; i < 150; i++) {
         const x = Math.random() * canvas.width;
         const y = Math.random() * canvas.height;
         const radius = Math.random() * 3;
-        backgroundStars.push(new Star(x, y, radius, "#E3EAEF"));
+        stars.push(new Star(x, y, radius, "#E3EAEF"));
       }
     }
 
@@ -63,10 +65,6 @@ class Home extends Component {
       stars.forEach(star => {
         star.update();
       });
-
-      backgroundStars.forEach(backgroundStar => {
-        backgroundStar.draw();
-      });
     }
 
     init();
@@ -76,7 +74,7 @@ class Home extends Component {
   render() {
     return (
       <div className="homeOuterWrapper">
-        <canvas ref="canvas" />
+        <canvas ref="canvas" handleResize={this.updateCanvas} />
         <div className="Logo">
           <img src={require("./Logo.png")} />
           <div className="Me">

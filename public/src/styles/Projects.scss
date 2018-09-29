@@ -1,49 +1,159 @@
-@media screen and (min-width: 0px) {
-  .projectWrapper {
-    .project {
-      .left {
-        height: 100vh;
-        background: lightcoral;
-      }
-      .right {
-        height: 100vh;
-      }
-    }
+.projectWrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  font-family: Lato;
+  a {
+    color: black;
+    text-decoration: underline;
   }
-}
-@media screen and (min-width: 700px) {
-  .projectWrapper {
-    .project {
-      display: flex;
-      height: 50%;
-      .left {
-        flex: 1;
-      }
-      .right {
-        flex: 1;
-      }
-    }
-    .project:first-of-type {
-      .left {
-        background: white;
-      }
-      .right {
-        background: lightcoral;
-      }
-    }
+  a:hover {
+    cursor: pointer;
   }
-}
 
-@media screen and (min-height: 600px) {
+  .project {
+    height: 60%;
+    width: 100%;
+    position: relative;
+    img {
+      height: 100%;
+      width: 100%;
+      border: 2px solid black;
+      border-radius: 10px;
+      box-sizing: border-box;
+      box-shadow: 0px 8px 18px 3px rgba(0, 0, 0, 0.82);
+      -webkit-box-shadow: 0px 8px 18px 3px rgba(0, 0, 0, 0.82);
+      -moz-box-shadow: 0px 8px 18px 3px rgba(0, 0, 0, 0.82);
+    }
+    .projectDesc {
+      position: absolute;
+      opacity: 0;
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      color: #e3eaef;
+      border: 2px solid black;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 0 2em;
+      box-sizing: border-box;
+      background: linear-gradient(
+        170deg,
+        #152126 0,
+        #152126 45%,
+        #152126 29%,
+        #3f5967 100%
+      );
+      .projectDescTop {
+        display: flex;
+        flex-direction: row;
+        h3 {
+          flex: 2;
+          margin-bottom: 0;
+        }
+        h4 {
+          flex: 3;
+          text-align: right;
+          margin-bottom: 0;
+          font-style: oblique;
+        }
+      }
+      p {
+        margin-top: 0.4em;
+        margin-bottom: 2em;
+      }
+      .projectDescMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+        p {
+          margin: 0.5em 0;
+        }
+      }
+    }
+  }
+  .project:hover .projectDesc {
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 500px) {
   .projectWrapper {
     .project {
-      .left {
-        height: 50vh;
-        background: lightcoral;
-      }
-      .right {
-        height: 50vh;
-      }
+      height: 60%;
+      width: 80%;
+    }
+    .project:hover .projectDesc {
+      opacity: 0;
+    }
+  }
+}
+@media screen and (min-width: 740px) {
+  .projectWrapper {
+    .project {
+      height: 70%;
+      width: 70%;
+    }
+    .project:hover .projectDesc {
+      opacity: 0.95;
+    }
+  }
+}
+@media screen and (min-width: 1040px) {
+  .projectWrapper {
+    .project {
+      height: 80%;
+      width: 50%;
+    }
+  }
+}
+@media screen and (min-height: 540px) {
+  .projectWrapper {
+    .project {
+      height: 50%;
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 500px) and (min-height: 540px) {
+  .projectWrapper {
+    .project {
+      height: 60%;
+    }
+  }
+}
+@media screen and (min-width: 640px) and (min-height: 540px) {
+  .projectWrapper {
+    .project {
+      height: 70%;
+      width: 90%;
+    }
+  }
+}
+@media screen and (min-width: 840px) and (min-height: 540px) {
+  .projectWrapper {
+    .project {
+      height: 60%;
+      width: 80%;
+    }
+  }
+}
+@media screen and (min-width: 960px) and (min-height: 540px) {
+  .projectWrapper {
+    .project {
+      height: 60%;
+      width: 55%;
     }
   }
 }
