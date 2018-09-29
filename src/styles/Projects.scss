@@ -6,6 +6,9 @@
   align-items: center;
   padding: 0 1em;
   font-family: Lato;
+  h1 {
+    text-decoration: underline;
+  }
   a {
     color: black;
     text-decoration: underline;
@@ -15,7 +18,7 @@
   }
 
   .project {
-    height: 60%;
+    height: 40%;
     width: 100%;
     position: relative;
     img {
@@ -91,7 +94,7 @@
 @media screen and (min-width: 500px) {
   .projectWrapper {
     .project {
-      height: 60%;
+      height: 40%;
       width: 80%;
     }
     .project:hover .projectDesc {
@@ -118,26 +121,11 @@
     }
   }
 }
-@media screen and (min-height: 540px) {
-  .projectWrapper {
-    .project {
-      height: 50%;
-      width: 100%;
-    }
-  }
-}
-@media screen and (min-width: 500px) and (min-height: 540px) {
-  .projectWrapper {
-    .project {
-      height: 60%;
-    }
-  }
-}
 @media screen and (min-width: 640px) and (min-height: 540px) {
   .projectWrapper {
     .project {
-      height: 70%;
-      width: 90%;
+      height: 50%;
+      width: 80%;
     }
   }
 }
@@ -150,6 +138,14 @@
   }
 }
 @media screen and (min-width: 960px) and (min-height: 540px) {
+  .projectWrapper {
+    .project {
+      height: 60%;
+      width: 70%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (min-height: 540px) {
   .projectWrapper {
     .project {
       height: 60%;

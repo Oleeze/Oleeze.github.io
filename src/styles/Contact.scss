@@ -41,6 +41,9 @@ button {
           .input:first-of-type {
             margin-top: 0;
           }
+          input:focus {
+            border: 3px solid #15d85f;
+          }
         }
       }
       .Message {
@@ -48,6 +51,9 @@ button {
         padding: 1em;
         height: 30vh;
         box-sizing: border-box;
+      }
+      .Message:focus {
+        border: 3px solid #15d85f;
       }
       .Send {
         background: #15d85f;
@@ -115,16 +121,10 @@ button {
         flex: 2;
         .formTop {
           .inputWrapper {
-            input:focus {
-              border: 3px solid #15d85f;
-            }
           }
         }
         .Message {
           height: 20vh;
-        }
-        .Message:focus {
-          border: 3px solid #15d85f;
         }
         padding-bottom: 5em;
       }

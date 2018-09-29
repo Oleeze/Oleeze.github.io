@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import "../styles/About.scss";
+import pdf from "./Resume.pdf";
 
 class About extends Component {
+  Resume() {
+    window.open(pdf);
+  }
+
   render() {
     return (
       <div className="outerAboutWrapper">
@@ -20,11 +25,11 @@ class About extends Component {
                 </a>
               </li>
               <li>
-                <h1>Resume</h1>
+                <h1 onClick={this.Resume}>Resume</h1>
               </li>
             </ul>
           </div>
-          <div className="right">
+          <div oncli className="right">
             <div className="about">
               <h1>About me</h1>
               <p>

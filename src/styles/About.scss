@@ -46,6 +46,10 @@
       .about {
         text-align: justify;
         padding: 0 5%;
+        h1 {
+          text-decoration: underline;
+          text-align: center;
+        }
       }
     }
   }
@@ -98,6 +102,11 @@
       }
       .right {
         flex: 1;
+        .about {
+          h1 {
+            text-align: left;
+          }
+        }
       }
     }
   }
@@ -130,6 +139,9 @@
         .about {
           padding-right: 25%;
           padding-left: 0;
+          h1 {
+            text-align: left;
+          }
         }
       }
     }
